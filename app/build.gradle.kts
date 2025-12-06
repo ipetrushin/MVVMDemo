@@ -36,7 +36,12 @@ android {
 }
 
 dependencies {
-
+    val lifecycle_version = "2.10.0"
+// implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+//    implementation "androidx.activity:activity-ktx:1.1.0"
+//    implementation "androidx.fragment:fragment-ktx:1.2.2"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    //implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
